@@ -1,0 +1,50 @@
+!pip install --upgrade "ibm-watson>=4.2.1"
+import IPython.display as ipd
+import json
+from os.path import join, dirname
+from ibm_watson import SpeechToTextV1
+from ibm_watson import LanguageTranslatorV3
+from ibm_watson import TextToSpeechV1
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+#Speech to Text Code----------------------------------
+authenticator = IAMAuthenticator('cLdoo3kHSG1lNYn-UVLNjvcGAEm4nz6_NkKJQSLyHOc')
+speech_to_text = SpeechToTextV1(
+authenticator=authenticator
+)
+speech_to_text.set_service_url(' https://api.us-south.speech-totext.watson.cloud.ibm.com/instances/cfe6ee7f-4bc3-461b-b554-bbdfe8887a40')
+with open(join(dirname('__file__'), './.', '360 Recording.flac'),
+'rb') as audio_file:
+ speech_recognition_results = speech_to_text.recognize(
+audio=audio_file,
+content_type='audio/flac',
+).get_result()
+results=speech_recognition_results.get('results').pop().get('alternatives').pop().get('transcript')
+print(json.dumps(results, indent=2))
+#Text Translation code-----------------------------------------------------------------------------------------
+authenticator =
+IAMAuthenticator('Nib71AeW74edKjH7g2AZIeEx_eChNACVF8tYZP9HKF4g')
+language_translator = LanguageTranslatorV3(
+version='2018-05-01',
+authenticator=authenticator
+)
+language_translator.set_service_url('https://api.us-south.languagetranslator.watson.cloud.ibm.com/instances/ca559176-4c4c-4eb0-87b6-8e013e31fa11')
+translation = language_translator.translate(
+text=(json.dumps(results, indent=2)),
+model_id='en-es').get_result(),
+tts=(str(translation)[36:-47])
+print(tts)
+#Text to Speech Code------------------------------------------------------------------------------------------
+authenticator = IAMAuthenticator('IkF9rZXaV203_-GptafbWrXRCm-xmILbOPs2Ex2RxT_t')
+text_to_speech = TextToSpeechV1(
+authenticator=authenticator
+)
+text_to_speech.set_service_url('https://api.us-south.text-tospeech.watson.cloud.ibm.com/instances/c1407748-957e-4efc-9b7c-eca9d3c14656')
+text=translation
+with open('hello_world.wav', 'wb') as audio_file:
+ audio_file.write(
+text_to_speech.synthesize(
+''.join(str(tts)),
+voice=‘es-US_SofiaV3Voice’,
+Accept='audio/wav'
+).get_result().content)
+ipd.Audio('hello_world.wav', autoplay=True)
