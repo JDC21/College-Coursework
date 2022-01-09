@@ -1,0 +1,117 @@
+#content {
+  padding: 30px;
+  border: 5px solid #808080;
+  border-radius: 25px;
+  width: 500px;
+  left: 200%;
+}
+
+#neutral {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  border: 5px solid #808080;
+  border-radius: 25px;
+}
+
+#affirm {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  top: 20%;
+  border: 5px solid #2eb82e;
+  border-radius: 25px;
+}
+
+
+
+#response3,
+#response2,
+#response1 {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  display: none;
+  border-radius: 25px;
+  position: absolute;
+  top: 17%;
+  padding: 10px;
+  left: 15%;
+  border: 3px solid #2eb82e;
+}
+
+.button1 {
+  top: 4%;
+  position: absolute;
+  right: 70%;
+}
+.button2 {
+  top: 4%;
+  position: absolute;
+  right: 80%;
+}
+.button3 {
+  top: 4%;
+  position: absolute;
+  right: 90%;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
