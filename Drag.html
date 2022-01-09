@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<div id="all">
+
+  <div class="matchhead">
+    <h1>Matching Charts</h1>
+  </div>
+  <br>
+
+  <div id="correct">
+    <p>Correct!</p>
+    <button class="button3" onclick="insert()">Confirm</button>
+  </div>
+  <div id="incorrect">
+    <p>Inorrect!</p>
+    <button class="button4" onclick="insert()">Confirm</button>
+  </div>
+
+  <div id="dropZone">
+    <div
+      id="dropBox1"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)">
+      <p1>Bearish Reversal</p1>
+    </div>
+    <div
+      id="dropBox2"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)">
+      <p1>Bearish Chart</p1>
+    </div>
+    <div
+      id="dropBox3"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)">
+      <p1>Bullish Chart</p1>
+    </div>
+    <div
+      id="dropBox4"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)">
+      <p1>Bearish Engulfing</p1>
+    </div>
+  </div>
+
+  <div id="borders">
+    <div id="pictures" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+      <img id="reverse" src="https://cdn.fbs.com/img/analyticguidebooks/337/1571227396-fb5c81ed3a220004b71069645f112867_1200x1200_q90v3.png" draggable="true" ondragstart="drag(event)" width="250"/>
+
+      <img id="bear" src="https://c8.alamy.com/comp/2G1TM4W/forex-trading-candlestick-chart-bearish-pattern-suitable-also-for-stock-exchange-and-crypto-price-analysis-2G1TM4W.jpg" draggable="true" ondragstart="drag(event)" width="250"/>
+
+      <img id="engulf" src="https://olymptradewiki.com/wp-content/uploads/2019/02/Bearish-engulfing-pattern-on-EURUSD-1m-chart.jpg" draggable="true" ondragstart="drag(event)" height="190" width="250"/>
+
+      <img id="bull" src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZAQFCW4GHNHLNOXIIWCFE6LHC4.png" draggable="true" ondragstart="drag(event)" width="250"/>
+
+    </div>
+  </div>
+  <button class="button1" onclick="answer()">Did you guess right?</button>
+  <button class="button2" onclick="insert()">Refresh</button>  
+
+  <div id="mascot">
+    <img id="affirm" src="Bet 2.jpg" width="250"/>
+    <img id="sad" src="Bet3 .jpg" width="250"/>
+    <img id="neutral" src="Bet 0.jpg" width="250"/>
+  </div>
+
+</div>
+
+
+<link rel="stylesheet" href="http://ec2-52-71-39-227.compute-1.amazonaws.com/wp-content/uploads/custom-css-js/959.css">
+<script src="http://ec2-52-71-39-227.compute-1.amazonaws.com/wp-content/uploads/custom-css-js/955.js"></script>
+
+</body>
+
+</html>
