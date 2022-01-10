@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+   
+       <link rel="stylesheet" href="HW6pt2.css">
+	   
+	   <script src="HW6pt2.js"></script>
+	   
+   </head>
+   
+   <body>
+   
+       <form class="mainForm" onchange="checkAll();">
+	   
+           <h1>New Account</h1>
+		   
+           <div class="row">
+		   
+               <input type="text" name="uName" id="uName" class="form-field" placeholder="Create your username" onkeyup="validateUserName(this.value);">
+           </div>
+		   
+           <div class="erroruName">
+		   
+               <span class="row error">Username must contain at least 3 characters</span>
+			   
+               <span class="row error">Username must not be empty and must not contain all spaces</span>
+			   
+           </div>
+		   
+           <div class="row">
+		   
+               <input type="password" name="Pass" id="Pass" class="form-field" placeholder="Create your password" onkeyup="validatePassword(this.value);">
+			   
+           </div>
+		   
+           <div class="errorPass">
+		   
+               <span class="row error">Password must not empty and must not contain all spaces</span>
+			   
+           </div>
+           
+           <div class="row">
+		   
+               <button class="button button-enabled" id="submitBtn" >Sign Up</button>
+			   
+           </div>
+		   
+       </form>
+	   
+	   <img align="middle" src="https://pngimg.com/uploads/world_map/world_map_PNG28.png" width="63%" height="auto">
+	   
+   </body>
+   
+</html>

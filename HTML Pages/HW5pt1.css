@@ -1,0 +1,71 @@
+<!--style.css-->
+
+body {
+
+    padding: 5%;
+
+}
+
+* {
+
+    letter-spacing: normal;
+	
+	background-color: #66cc00;
+
+}
+
+.center {
+
+    text-align: center;
+	
+	background-color: #ffff66;
+
+}
+
+table {
+
+    width: 70%;
+
+    font: 17px Calibri;
+
+    border: 1px solid black;
+	
+	text-align: center;
+
+    margin: 2% 10%;
+	
+	background-color: #ffff66;
+	
+}
+
+table, th, td {
+
+    border: solid 1px black;
+
+    border-collapse: collapse;
+
+    padding: 2px 3px;
+
+    text-align: center;
+	
+	background-color: #ffff66;
+
+}
+
+button {
+
+    padding: 10px;
+	
+	border: solid 1px black;
+
+    margin: 2% 37%;
+
+	background-color: #ffff66;
+
+}
+
+button:hover {
+
+    background-position: center;
+
+}

@@ -1,0 +1,126 @@
+body{
+	
+	background-color:#222211;
+   
+}
+
+h1{
+	
+	margin:auto 10px ;
+   
+	color:White;
+   
+	text-decoration:underline;
+   
+	text-align: center;
+   
+}
+
+.mainForm {
+	
+	margin:100px auto;
+   
+	width:50%;
+   
+	border: 3px solid white;
+   
+	padding:20px;
+   
+}
+
+.form-field {
+	
+	display:inline;
+   
+	padding:10px;
+   
+	width:90%;
+   
+	margin:15px 15px 15px 30px;
+   
+	border-radius:5px;
+   
+}
+.erroruName {
+	
+	display:none;
+   
+	margin:5px 5px 5px 30px;
+   
+}
+.errorPass {
+	
+	display:none;
+   
+	margin:5px 5px 5px 30px;
+   
+}
+
+.row {
+	
+	display:block;
+	
+}
+
+.error {
+	
+	color:#ff0000;
+   
+}
+
+.button-enabled:hover{
+	
+	color: black;
+   
+	background-color: #ff8080;
+
+	font-weight:bold;
+  
+}
+.button-disabled {
+	
+	color: #fff;
+   
+	background-color: #6c757d;
+
+	border-color: #6c757d;
+
+	cursor:default;
+
+}
+.button-enabled {
+	
+	color: #fff;
+   
+	background-color: #cc0000;
+
+	border-color: #1a0000;
+
+	cursor: pointer;
+
+}
+.button {
+	
+	margin-left:45%;
+   
+	display: inline-block;
+
+	font-weight: 400;
+
+	text-align: center;
+
+	padding: .375rem .75rem;
+
+	font-size: 1rem;
+
+	line-height: 1.5;
+
+	border-radius: .25rem;
+
+}
+img {
+	
+	margin-left:18%;
+	
+}
+	

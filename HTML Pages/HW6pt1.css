@@ -1,0 +1,185 @@
+body {
+	
+	background-color: #669999;
+
+}
+
+h1 {
+	
+	text-align: center;
+	
+	font: small-caps bold 48px/1 sans-serif;
+	
+	color: white;
+	
+	background-image: url(https://pngimage.net/wp-content/uploads/2018/06/pokemon-background-png-3.png);
+	
+	
+	
+	background-position: 50% 95%;
+	
+	background-size: 700px 300px;
+	
+	border: solid black;
+}
+
+h2 {
+	
+	text-align: center;
+	
+	font: small-caps bold 24px/1 sans-serif;
+	
+}
+
+h2 {
+	
+	text-align: center;
+	
+	font: small-caps bold 24px/1 sans-serif;
+	
+}
+
+#cards {
+	
+  display: flex;
+  
+  flex-wrap: wrap;
+  
+}
+.card {
+	
+  width: 320px;
+  
+  border: 1px solid #eee;
+  
+  background-color: #fff;
+  
+  margin: 80px;
+  
+  background-position: 75px 100px;
+  
+  text-align: center;
+  
+  border-radius: 4px;
+  
+  padding: 15px 10px;
+  
+  border: solid;
+  
+}
+
+p {
+	
+  font-size: 15px;
+  
+}
+
+.traits1 {
+	
+  display: flex;
+  
+  justify-content: space-around;
+  
+}
+.traits1 > div {
+	
+  padding: 10px 15px;
+  
+  border-radius: 8px;
+  
+  background-color: #660066;
+  
+  color: #fff;
+  
+}
+.traits1 > div p {
+	
+  font-size: 13px;
+  
+  margin-bottom: 0;
+  
+}
+
+.traits1 >div h3 {
+	
+  margin: 10px 0;
+  
+  font-size: 18px;
+  
+}
+
+.shadow {
+	
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  
+}
+
+.traits2 {
+	
+  display: flex;
+  
+  justify-content: space-around;
+  
+}
+
+.traits2 > div {
+	
+  padding: 10px 15px;
+  
+  border-radius: 8px;
+  
+  background-color: #b3b3e6;
+  
+  color: #fff;
+}
+
+.traits2 > div p {
+	
+  font-size: 13px;
+  
+  margin-bottom: 0;
+  
+}
+
+.traits2 >div h3 {
+	
+  margin: 10px 0;
+  
+  font-size: 18px;
+  
+}
+
+.traits3 {
+	
+  display: flex;
+  
+  justify-content: space-around;
+  
+}
+
+.traits3 > div {
+	
+  padding: 10px 15px;
+  
+  border-radius: 8px;
+  
+  background-color: #ff4d4d;
+  
+  color: #fff;
+  
+}
+
+.traits3 > div p {
+	
+  font-size: 13px;
+  
+  margin-bottom: 0;
+  
+}
+.traits3 >div h3 {
+	
+  margin: 10px 0;
+  
+  font-size: 18px;
+  
+}

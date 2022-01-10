@@ -1,0 +1,89 @@
+<html>
+ <head>
+  <title>IFT 301</title>
+ </head>
+ <body>
+  <h1>Payment Form</h1>
+    <p style="color:red">All Fields are REQUIRED</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+            <label for="fname"><i class="fa fa-user"></i> First Name</label>
+              <input type="text" id="fname" name="firstname"><br>
+			<label for="lname"><i class="fa fa-user"></i> Last Name</label>
+              <input type="text" id="fname" name="firstname"><br>
+            <label for="address"><i class="fa fa-address-card-o"></i> Street Address</label>
+              <input type="text" id="adr" name="address"><br>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                  <input type="text" id="state" name="state">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip/Postal Code</label>
+                  <input type="text" id="zip" name="zip">
+              </div>
+            </div>
+          </div>
+
+         
+            <label for="CardType">Credit Card Type</label><br>
+			  <input type="radio" name="CardType" value="MasterCard"> MasterCard<br>
+              <input type="radio" name="CardType" value="Visa"> Visa<br>
+              <input type="radio" name="CardType" value="Discover"> Discover<br>
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expdate">Expiration Date</label>
+				  <select>
+                  <option value="Month">--Month--</option>
+                  <option value="Month">January</option>
+                  <option value="Month">February</option>
+                  <option value="Month">March</option>
+				  <option value="Month">April</option>
+                  <option value="Month">May</option>
+                  <option value="Month">June</option>
+				  <option value="Month">July</option>
+                  <option value="Month">August</option>
+                  <option value="Month">September</option>
+				  <option value="Month">October</option>
+                  <option value="Month">November</option>
+                  <option value="Month">December</option>
+                </select>
+				<select>
+                  <option value="Year">--Year--</option>
+                  <option value="Year">2013</option>
+                  <option value="Year">2014</option>
+                  <option value="Year">2015</option>
+				  <option value="Year">2016</option>
+                  <option value="Year">2017</option>
+                  <option value="Year">2018</option>
+				  <option value="Year">2019</option>
+                </select>
+              </div>
+			  
+              <div class="col-30", rows="8">
+                <label for="SNotes">Special Notes</label>
+                  <input type="text" id="SNotes" name="SNotes" placeholder="Enter notes here..." >
+              </div>
+            </div>
+          </div><br>
+
+        </div>
+          </label>
+            <input type="submit" value="Submit Payment" class="btn">
+      </form>
+    </div>
+  </div>
+</div>
+
+ </body>
+</html>
